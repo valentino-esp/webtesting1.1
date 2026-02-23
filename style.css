@@ -1,0 +1,130 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(255, 249, 224);
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+
+.navbar {
+    background-color: rgb(78, 78, 78);
+    position: inherit;
+    padding-bottom: 4px;
+}
+
+.navbar li a {
+    display: block;
+    align-items: center;
+    padding: 16px 20px 16px 20px;
+    margin-top:3px;
+    text-decoration: none;
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+
+.navbar li a:hover {
+    background-color: rgb(153, 153, 153);
+    color: black;
+    font-size: 18px;
+}
+
+.nav-btn {
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(78, 78, 78);
+}
+
+#logo {
+    margin-left: 1%;
+    margin-top: 8px;
+    width: 97px;
+    height: 47px;
+}
+
+#header-title {
+    letter-spacing: 19px;
+    text-align: center;
+    border: 6px groove;
+    border-color: rgb(180, 143, 74);
+}
+
+div.Content {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.Content > div {
+    margin: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    min-width: 200px;
+    max-width: 1400px;
+    gap: 10px;
+    padding: 10px;
+    align-content: center;
+    margin-right: 10px;
+
+}
+
+.container div {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.container img {
+    width: 150px;
+    height: 150px
+}
+
+
+
+.footer {
+    margin-top: auto;
+    display: block;
+    text-align: center;
+    padding: 5px 15px;
+    text-indent: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: rgb(78, 78, 78);
+    color: rgb(255, 255, 255);
+}
+
+.info{
+    padding: 5px 15px;
+    display: flex;
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+
+#mail li a{
+    color: white;
+}
+
+#mail li a:hover {
+    font-weight: bolder;
+    color: rgb(46, 185, 240);
+}
+
+@media screen and (max-width: 600px) {
+    div.Content {
+        flex-direction: column;
+    }
+    #header-title {
+        letter-spacing: 5px;
+    }
+}
